@@ -1,0 +1,70 @@
+{
+  "project_info": {
+    "project_number": "1094920980763",
+    "project_id": "ppps-73695",
+    "storage_bucket": "ppps-73695.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1094920980763:android:7304efdbb7893c3f2fabbe",
+        "android_client_info": {
+          "package_name": "com.cortex.ppp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1094920980763-1qnbe6sstkesh318k65ra4gmjnpdkij0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cortex.ppp",
+            "certificate_hash": "5f6e6432f9860712887e02a1198085661cf8eb55"
+          }
+        },
+        {
+          "client_id": "1094920980763-8gf0hrv6b01ec519jvsj5klpf4ac5u89.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cortex.ppp",
+            "certificate_hash": "6866bea017ae5343b1b9d5ef7291a8fd735d8df4"
+          }
+        },
+        {
+          "client_id": "1094920980763-bthpi690qpi8tgqunndgg0parrjtpj9j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cortex.ppp",
+            "certificate_hash": "cfa36c1515e14fb7a1b6d558ec1e05afe0887f34"
+          }
+        },
+        {
+          "client_id": "1094920980763-g23f20ssvthdl1crlhh1nogtk2f66e7u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXSLVDsVzbdKWCue5U4TOhnguTicTkpYo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1094920980763-g23f20ssvthdl1crlhh1nogtk2f66e7u.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1094920980763-tpl700kp1biu4u0udv9fm8mt4idm9trt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.cortex.ppp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

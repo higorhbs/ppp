@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1094920980763",
+    "firebase_url": "https://ppps-73695-default-rtdb.firebaseio.com",
+    "project_id": "ppps-73695",
+    "storage_bucket": "ppps-73695.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1094920980763:android:7304efdbb7893c3f2fabbe",
+        "android_client_info": {
+          "package_name": "com.cortex.ppp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1094920980763-g23f20ssvthdl1crlhh1nogtk2f66e7u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXSLVDsVzbdKWCue5U4TOhnguTicTkpYo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1094920980763-g23f20ssvthdl1crlhh1nogtk2f66e7u.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1094920980763-tpl700kp1biu4u0udv9fm8mt4idm9trt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.cortex.ppp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
