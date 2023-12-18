@@ -74,7 +74,13 @@ class _CardPicturesState extends State<CardPictures>
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: <Widget>[
-                                      new Image.asset("asset/novo.png"),
+                                      Image.asset(
+                                        "asset/novo.png",
+                                        height:
+                                            150, // Ajuste a altura conforme necessário
+                                        width:
+                                            150, // Ajuste a largura conforme necessário
+                                      ),
                                     ],
                                   ),
                                 )
@@ -483,6 +489,65 @@ class _CardPicturesState extends State<CardPictures>
                       ),
                     ),
                   ],
+                ),
+              ),
+              Positioned(
+                top: 10, // Ajuste a posição superior conforme necessário
+                width: MediaQuery.of(context)
+                    .size
+                    .width, // Use a largura total da tela
+                child: Center(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset(
+                        "asset/logo-transp.png", // Substitua pelo caminho real para o seu arquivo de imagem do logo
+                        height: 50, // Ajuste a altura conforme necessário
+                        width: 50, // Ajuste a largura conforme necessário
+                      ),
+                      SizedBox(width: 10), // Espaço entre a imagem e o texto
+                      ShaderMask(
+                        shaderCallback: (Rect bounds) {
+                          return LinearGradient(
+                            colors: [
+                              HSLColor.fromAHSL(1.0, 301, 0.64, 0.64).toColor(),
+                              HSLColor.fromAHSL(1.0, 262, 0.31, 0.71).toColor(),
+                              HSLColor.fromAHSL(1.0, 198, 0.42, 0.79).toColor(),
+                            ], // Cores do gradiente roxo
+                            begin: Alignment.centerLeft,
+                            end: Alignment.centerRight,
+                          ).createShader(bounds);
+                        },
+                        child: RichText(
+                          textAlign: TextAlign.center,
+                          text: TextSpan(
+                            children: [
+                              TextSpan(
+                                text: "PPP",
+                                style: TextStyle(
+                                  fontSize: 30,
+                                  fontWeight: FontWeight.bold,
+                                  fontStyle: FontStyle.normal,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              TextSpan(
+                                text: "UNI",
+                                style: TextStyle(
+                                  fontSize: 30,
+                                  fontWeight: FontWeight.bold,
+                                  fontStyle: FontStyle.normal,
+                                  fontFamily:
+                                      'RobotoMono', // Substitua pelo nome da sua nova fonte
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
               exceedSwipes
