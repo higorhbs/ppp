@@ -143,7 +143,7 @@ class _VerificationState extends State<Verification> {
                         text: " REENVIAR".tr().toString(),
                         recognizer: onTapRecognizer,
                         style: TextStyle(
-                            color: Color(0xFF91D3B3),
+                            color: Color(0xFF555555),
                             fontWeight: FontWeight.bold,
                             fontSize: 16))
                   ]),

@@ -505,7 +505,7 @@ class _CardPicturesState extends State<CardPictures>
                         height: 50, // Ajuste a altura conforme necessário
                         width: 50, // Ajuste a largura conforme necessário
                       ),
-                      SizedBox(width: 10), // Espaço entre a imagem e o texto
+                      SizedBox(width: 7), // Espaço entre a imagem e o texto
                       ShaderMask(
                         shaderCallback: (Rect bounds) {
                           return LinearGradient(
@@ -525,20 +525,18 @@ class _CardPicturesState extends State<CardPictures>
                               TextSpan(
                                 text: "PPP",
                                 style: TextStyle(
-                                  fontSize: 30,
+                                  fontSize: 27,
                                   fontWeight: FontWeight.bold,
-                                  fontStyle: FontStyle.normal,
+                                  fontFamily: 'RobotoMono',
                                   color: Colors.white,
                                 ),
                               ),
                               TextSpan(
                                 text: "UNI",
                                 style: TextStyle(
-                                  fontSize: 30,
+                                  fontSize: 27,
                                   fontWeight: FontWeight.bold,
-                                  fontStyle: FontStyle.normal,
-                                  fontFamily:
-                                      'RobotoMono', // Substitua pelo nome da sua nova fonte
+                                  fontFamily: 'lato',
                                   color: Colors.white,
                                 ),
                               ),
