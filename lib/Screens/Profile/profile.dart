@@ -10,6 +10,7 @@ import 'package:ppp/models/user_model.dart';
 import 'package:ppp/util/color.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:ppp/Screens/auth/login.dart';
+
 ///import 'package:firebase_admob/firebase_admob.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
@@ -60,7 +61,6 @@ class Profile extends StatefulWidget {
   _ProfileState createState() => _ProfileState();
 }
 
-
 class _ProfileState extends State<Profile> {
   final EditProfileState _editProfileState = EditProfileState();
   //BannerAd _ad;
@@ -89,34 +89,61 @@ class _ProfileState extends State<Profile> {
             Container(
               child: Stack(
                 children: <Widget>[
-                  Padding(
-                      padding: const EdgeInsets.only(left: 15, top: 30),
-                      child: Align(
-                        alignment: Alignment.centerLeft,
-                        child: Column(
-                          children: <Widget>[
-                            FloatingActionButton(
-                                splashColor: secondryColor,
-                                heroTag: UniqueKey(),
-                                backgroundColor: Colors.purple.shade900,
-                                child: Icon(
-                                  Icons.reorder,
-                                  color: Colors.white,
-                                  size: 28,
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset(
+                        "asset/logo-transp.png", // Substitua pelo caminho real para o seu arquivo de imagem do logo
+                        height: 115, // Ajuste a altura conforme necessário
+                        width: 50, // Ajuste a largura conforme necessário
+                      ),
+                      SizedBox(width: 7), // Espaço entre a imagem e o texto
+                      ShaderMask(
+                        shaderCallback: (Rect bounds) {
+                          return LinearGradient(
+                            colors: [
+                              HSLColor.fromAHSL(1.0, 301, 0.64, 0.64).toColor(),
+                              HSLColor.fromAHSL(1.0, 262, 0.31, 0.71).toColor(),
+                              HSLColor.fromAHSL(1.0, 198, 0.42, 0.79).toColor(),
+                            ], // Cores do gradiente roxo
+                            begin: Alignment.centerLeft,
+                            end: Alignment.centerRight,
+                          ).createShader(bounds);
+                        },
+                        child: RichText(
+                          textAlign: TextAlign.center,
+                          text: TextSpan(
+                            children: [
+                              TextSpan(
+                                text: "PPP",
+                                style: TextStyle(
+                                  fontSize: 27,
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily: 'Montserrat',
                                 ),
-                                onPressed: () {
-                                  _configurandoModalBottomSheet(context);
-                                }),
-                          ],
+                              ),
+                              TextSpan(
+                                text: "UNI",
+                                style: TextStyle(
+                                  fontSize: 27,
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily: 'Montserrat',
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
-                      )),
+                      ),
+                    ],
+                  ),
                 ],
               ),
             ),
             Hero(
               tag: "abc",
               child: Padding(
-                padding: const EdgeInsets.only(top: 120),
+                padding: const EdgeInsets.only(top: 20),
                 child: CircleAvatar(
                   radius: 80,
                   backgroundColor: secondryColor,
@@ -133,15 +160,13 @@ class _ProfileState extends State<Profile> {
                                 builder: (context) {
                                   return Info(widget.currentUser,
                                       widget.currentUser, null);
-
                                 }),
-
                             child: Center(
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(
                                   80,
                                 ),
-                                child: 
+                                child:
 /*                                    
 CachedNetworkImage(
   height: 150,
@@ -158,9 +183,9 @@ CachedNetworkImage(
   placeholder: (context, url) => CircularProgressIndicator(),
  // errorWidget: (context, url, error) => CircularProgressIndicator(),
 ),
-*/                                    
-                                                                
-                                CachedNetworkImage(
+*/
+
+                                    CachedNetworkImage(
                                   height: 150,
                                   width: 150,
                                   fit: BoxFit.fill,
@@ -169,7 +194,6 @@ CachedNetworkImage(
                                           ? widget.currentUser.imageUrl[0] ?? ''
                                           : '',
                                 ),
-
                               ),
                             ),
                           ),
@@ -204,19 +228,11 @@ CachedNetworkImage(
                   ? "${widget.currentUser.name}, ${widget.currentUser.age}"
                   : "",
               style: TextStyle(
-                  color: Colors.black87,
-                  fontWeight: FontWeight.w500,
-                  fontSize: 30),
-            ),
-            Text(
-              widget.currentUser.editInfo['job_title'] != null
-                  ? "${widget.currentUser.editInfo['job_title']}  ${widget.currentUser.editInfo['company'] != null ? "at ${widget.currentUser.editInfo['company']}" : ""}"
-                  : "",
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                  color: Colors.black54,
-                  fontWeight: FontWeight.w400,
-                  fontSize: 20),
+                fontFamily: 'Montserrat',
+                color: Colors.black87,
+                fontWeight: FontWeight.w500,
+                fontSize: 30,
+              ),
             ),
             Text(
               widget.currentUser.editInfo['university'] != null
@@ -291,7 +307,23 @@ CachedNetworkImage(
                 },
               ),
             ),
- */           
+ */
+            Padding(
+              padding: EdgeInsets.only(top: 16.0), // Ajuste conforme necessário
+              child: FloatingActionButton(
+                splashColor: secondryColor,
+                heroTag: UniqueKey(),
+                backgroundColor: Colors.purple.shade900,
+                child: Icon(
+                  Icons.edit,
+                  color: Colors.white,
+                  size: 22,
+                ),
+                onPressed: () {
+                  _configurandoModalBottomSheet(context);
+                },
+              ),
+            ),
           ]),
         ),
       ),
@@ -406,7 +438,6 @@ CachedNetworkImage(
         });
   }
 }
-
 
 class CurvePainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {

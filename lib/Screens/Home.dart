@@ -64,8 +64,8 @@ class _CardPicturesState extends State<CardPictures>
                 child: Stack(
                   children: <Widget>[
                     Container(
-                      height: MediaQuery.of(context).size.height * .78,
-                      width: MediaQuery.of(context).size.width,
+                      height: MediaQuery.of(context).size.height * .99,
+                      width: MediaQuery.of(context).size.width * 99,
                       child:
                           //onEnd ||
                           widget.users.length == 0
@@ -92,7 +92,7 @@ class _CardPicturesState extends State<CardPictures>
                                         (SwiperPosition position,
                                             double progress) {
                                       return Material(
-                                          elevation: 5,
+                                          elevation: 55,
                                           borderRadius: BorderRadius.all(
                                               Radius.circular(30)),
                                           child: Container(
@@ -118,7 +118,7 @@ class _CardPicturesState extends State<CardPictures>
                                                                     context)
                                                                 .size
                                                                 .height *
-                                                            .78,
+                                                            0.99, // Ajuste aqui
                                                         width: MediaQuery.of(
                                                                 context)
                                                             .size
@@ -141,23 +141,22 @@ class _CardPicturesState extends State<CardPictures>
                                                                   url, error) =>
                                                               Icon(Icons.error),
                                                         ),
-                                                        // child: Image.network(
-                                                        //   index.imageUrl[index2],
-                                                        //   fit: BoxFit.cover,
-                                                        // ),
                                                       );
                                                     },
                                                     itemCount:
                                                         index.imageUrl.length,
-                                                    pagination: new SwiperPagination(
-                                                        alignment: Alignment
-                                                            .bottomCenter,
-                                                        builder: DotSwiperPaginationBuilder(
-                                                            activeSize: 13,
-                                                            color:
-                                                                secondryColor,
-                                                            activeColor:
-                                                                primaryColor)),
+                                                    pagination:
+                                                        new SwiperPagination(
+                                                      alignment: Alignment
+                                                          .bottomCenter,
+                                                      builder:
+                                                          DotSwiperPaginationBuilder(
+                                                        activeSize: 1,
+                                                        color: secondryColor,
+                                                        activeColor:
+                                                            primaryColor,
+                                                      ),
+                                                    ),
                                                     control: new SwiperControl(
                                                       color: primaryColor,
                                                       disableColor:
@@ -244,47 +243,39 @@ class _CardPicturesState extends State<CardPictures>
                                                 Padding(
                                                   padding:
                                                       const EdgeInsets.only(
-                                                          bottom: 10),
+                                                          bottom: 60),
                                                   child: Align(
                                                       alignment:
                                                           Alignment.bottomLeft,
                                                       child: ListTile(
-                                                          onTap: () {
-                                                            ///_ads.myInterstitial()
-                                                            /// ..load()
-                                                            /// ..show();
-                                                            showDialog(
-                                                                barrierDismissible:
-                                                                    false,
-                                                                context:
-                                                                    context,
-                                                                builder:
-                                                                    (context) {
-                                                                  return Info(
-                                                                      index,
-                                                                      widget
-                                                                          .currentUser,
-                                                                      swipeKey);
-                                                                });
-                                                          },
-                                                          title: Text(
-                                                            "${index.name}, ${index.editInfo['showMyAge'] != null ? !index.editInfo['showMyAge'] ? index.age : "" : index.age}",
-                                                            style: TextStyle(
-                                                                color: Colors
-                                                                    .white,
-                                                                fontSize: 25,
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .bold),
-                                                          ),
-                                                          subtitle: Text(
-                                                            "${index.address}",
-                                                            style: TextStyle(
+                                                        onTap: () {
+                                                          ///_ads.myInterstitial()
+                                                          /// ..load()
+                                                          /// ..show();
+                                                          showDialog(
+                                                              barrierDismissible:
+                                                                  false,
+                                                              context: context,
+                                                              builder:
+                                                                  (context) {
+                                                                return Info(
+                                                                    index,
+                                                                    widget
+                                                                        .currentUser,
+                                                                    swipeKey);
+                                                              });
+                                                        },
+                                                        title: Text(
+                                                          "${index.name}, ${index.editInfo['showMyAge'] != null ? !index.editInfo['showMyAge'] ? index.age : "" : index.age}",
+                                                          style: TextStyle(
                                                               color:
                                                                   Colors.white,
-                                                              fontSize: 20,
-                                                            ),
-                                                          ))),
+                                                              fontSize: 25,
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .bold),
+                                                        ),
+                                                      )),
                                                 ),
                                               ],
                                             ),
@@ -340,14 +331,14 @@ class _CardPicturesState extends State<CardPictures>
                                               });
                                               return Padding(
                                                 padding: const EdgeInsets.only(
-                                                    top: 80),
+                                                    top: 0),
                                                 child: Align(
                                                   alignment:
                                                       Alignment.topCenter,
                                                   child: Card(
                                                     child: Container(
-                                                      height: 100,
-                                                      width: 300,
+                                                      height: 200,
+                                                      width: 600,
                                                       child: Center(
                                                         child: Text(
                                                           "It's a match\n With ",
@@ -357,6 +348,8 @@ class _CardPicturesState extends State<CardPictures>
                                                               color:
                                                                   primaryColor,
                                                               fontSize: 30,
+                                                              fontFamily:
+                                                                  'Montserrat',
                                                               decoration:
                                                                   TextDecoration
                                                                       .none),
@@ -448,7 +441,7 @@ class _CardPicturesState extends State<CardPictures>
                                 ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(25),
+                      padding: const EdgeInsets.all(30),
                       child: Align(
                         alignment: Alignment.bottomCenter,
                         child: Row(
@@ -457,7 +450,7 @@ class _CardPicturesState extends State<CardPictures>
                           children: <Widget>[
                             FloatingActionButton(
                               heroTag: UniqueKey(),
-                              backgroundColor: Colors.transparent,
+                              backgroundColor: Color.fromRGBO(0, 0, 0, 0),
                               child: new Image.asset("asset/x.png"),
                               onPressed: () {
                                 if (widget.users.length > 0) {
@@ -468,7 +461,7 @@ class _CardPicturesState extends State<CardPictures>
                             ),
                             FloatingActionButton(
                                 heroTag: UniqueKey(),
-                                backgroundColor: Colors.transparent,
+                                backgroundColor: Color.fromRGBO(0, 0, 0, 0),
                                 child: new Image.asset("asset/interrog.png"),
                                 onPressed: () async {
                                   if (widget.users.length > 0) {
@@ -476,14 +469,16 @@ class _CardPicturesState extends State<CardPictures>
                                   }
                                 }),
                             FloatingActionButton(
-                                heroTag: UniqueKey(),
-                                backgroundColor: Colors.transparent,
-                                child: new Image.asset("asset/pegoo.png"),
-                                onPressed: () {
-                                  if (widget.users.length > 0) {
-                                    swipeKey.currentState.swipeRight();
-                                  }
-                                }),
+                              heroTag: UniqueKey(),
+                              backgroundColor: Color.fromRGBO(0, 0, 0,
+                                  0), // Ajuste o último valor para controlar a opacidade
+                              child: Image.asset("asset/pegoo.png"),
+                              onPressed: () {
+                                if (widget.users.length > 0) {
+                                  swipeKey.currentState.swipeRight();
+                                }
+                              },
+                            ),
                           ],
                         ),
                       ),
@@ -492,7 +487,7 @@ class _CardPicturesState extends State<CardPictures>
                 ),
               ),
               Positioned(
-                top: 10, // Ajuste a posição superior conforme necessário
+                top: 15, // Ajuste a posição superior conforme necessário
                 width: MediaQuery.of(context)
                     .size
                     .width, // Use a largura total da tela
@@ -502,7 +497,7 @@ class _CardPicturesState extends State<CardPictures>
                     children: [
                       Image.asset(
                         "asset/logo-transp.png", // Substitua pelo caminho real para o seu arquivo de imagem do logo
-                        height: 50, // Ajuste a altura conforme necessário
+                        height: 60, // Ajuste a altura conforme necessário
                         width: 50, // Ajuste a largura conforme necessário
                       ),
                       SizedBox(width: 7), // Espaço entre a imagem e o texto
@@ -527,8 +522,7 @@ class _CardPicturesState extends State<CardPictures>
                                 style: TextStyle(
                                   fontSize: 27,
                                   fontWeight: FontWeight.bold,
-                                  fontFamily: 'RobotoMono',
-                                  color: Colors.white,
+                                  fontFamily: 'Montserrat',
                                 ),
                               ),
                               TextSpan(
@@ -536,7 +530,7 @@ class _CardPicturesState extends State<CardPictures>
                                 style: TextStyle(
                                   fontSize: 27,
                                   fontWeight: FontWeight.bold,
-                                  fontFamily: 'lato',
+                                  fontFamily: 'Montserrat',
                                   color: Colors.white,
                                 ),
                               ),

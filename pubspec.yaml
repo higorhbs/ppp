@@ -21,6 +21,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
   country_code_picker: ^1.2.3
   pin_code_fields: ^2.3.0+3
   swipe_stack: ^1.0.0
