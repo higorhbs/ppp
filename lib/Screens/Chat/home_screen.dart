@@ -41,9 +41,11 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         centerTitle: true,
         automaticallyImplyLeading: false,
-        title: Text("New Matches".tr().toString(),
+        title: Text("PPPUNI".tr().toString(),
             style: TextStyle(
               color: Colors.white,
+              fontFamily: 'Monteserrat',
+              fontSize: 27.0,
               fontWeight: FontWeight.bold,
               letterSpacing: 1.0,
             )),
@@ -78,6 +80,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Text(
                     'Recent messages'.tr().toString(),
                     style: TextStyle(
+                      fontFamily: 'Monteserrat',
                       color: primaryColor,
                       fontSize: 18.0,
                       fontWeight: FontWeight.bold,

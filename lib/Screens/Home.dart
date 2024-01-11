@@ -50,13 +50,7 @@ class _CardPicturesState extends State<CardPictures>
           preferredSize: Size.fromHeight(0.0), // here the desired height
           child: AppBar(backgroundColor: Colors.transparent)),
       body: Container(
-        decoration: BoxDecoration(
-            borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(50), topRight: Radius.circular(50)),
-            color: Colors.white),
         child: ClipRRect(
-          borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(50), topRight: Radius.circular(50)),
           child: Stack(
             children: [
               AbsorbPointer(
@@ -86,22 +80,18 @@ class _CardPicturesState extends State<CardPictures>
                                 )
                               : SwipeStack(
                                   key: swipeKey,
+                                  padding: EdgeInsets.symmetric(horizontal: 0),
                                   children: widget.users.map((index) {
                                     // User user;
                                     return SwiperItem(builder:
                                         (SwiperPosition position,
                                             double progress) {
                                       return Material(
-                                          elevation: 55,
-                                          borderRadius: BorderRadius.all(
-                                              Radius.circular(30)),
+                                          elevation: 0,
                                           child: Container(
                                             child: Stack(
                                               children: <Widget>[
                                                 ClipRRect(
-                                                  borderRadius:
-                                                      BorderRadius.all(
-                                                          Radius.circular(30)),
                                                   child: Swiper(
                                                     customLayoutOption:
                                                         CustomLayoutOption(
@@ -192,6 +182,8 @@ class _CardPicturesState extends State<CardPictures>
                                                                         .tr()
                                                                         .toString(),
                                                                     style: TextStyle(
+                                                                        fontFamily:
+                                                                            'Monteserrat',
                                                                         color: Colors
                                                                             .red,
                                                                         fontWeight:
@@ -230,6 +222,8 @@ class _CardPicturesState extends State<CardPictures>
                                                                             .tr()
                                                                             .toString(),
                                                                         style: TextStyle(
+                                                                            fontFamily:
+                                                                                'Monteserrat',
                                                                             color:
                                                                                 Colors.lightBlueAccent,
                                                                             fontWeight: FontWeight.bold,
@@ -243,7 +237,7 @@ class _CardPicturesState extends State<CardPictures>
                                                 Padding(
                                                   padding:
                                                       const EdgeInsets.only(
-                                                          bottom: 60),
+                                                          bottom: 80),
                                                   child: Align(
                                                       alignment:
                                                           Alignment.bottomLeft,
@@ -268,6 +262,8 @@ class _CardPicturesState extends State<CardPictures>
                                                         title: Text(
                                                           "${index.name}, ${index.editInfo['showMyAge'] != null ? !index.editInfo['showMyAge'] ? index.age : "" : index.age}",
                                                           style: TextStyle(
+                                                              fontFamily:
+                                                                  'Monteserrat',
                                                               color:
                                                                   Colors.white,
                                                               fontSize: 25,
@@ -497,7 +493,7 @@ class _CardPicturesState extends State<CardPictures>
                     children: [
                       Image.asset(
                         "asset/logo-transp.png", // Substitua pelo caminho real para o seu arquivo de imagem do logo
-                        height: 60, // Ajuste a altura conforme necessário
+                        height: 80, // Ajuste a altura conforme necessário
                         width: 50, // Ajuste a largura conforme necessário
                       ),
                       SizedBox(width: 7), // Espaço entre a imagem e o texto
@@ -522,7 +518,7 @@ class _CardPicturesState extends State<CardPictures>
                                 style: TextStyle(
                                   fontSize: 27,
                                   fontWeight: FontWeight.bold,
-                                  fontFamily: 'Montserrat',
+                                  fontFamily: 'Monteserrat',
                                 ),
                               ),
                               TextSpan(
@@ -573,6 +569,7 @@ class _CardPicturesState extends State<CardPictures>
                                           .toString(),
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
+                                          fontFamily: 'Monteserrat',
                                           fontWeight: FontWeight.bold,
                                           color: Colors.grey,
                                           fontSize: 20),
@@ -591,6 +588,7 @@ class _CardPicturesState extends State<CardPictures>
                                           .toString(),
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
+                                          fontFamily: 'Monteserrat',
                                           color: primaryColor,
                                           fontWeight: FontWeight.bold,
                                           fontSize: 20),

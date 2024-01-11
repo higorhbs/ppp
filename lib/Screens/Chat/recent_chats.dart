@@ -130,6 +130,7 @@ class RecentChats extends StatelessWidget {
                                             : snapshot.data.documents[0]
                                                 ['text'],
                                         style: TextStyle(
+                                          fontFamily: 'Monteserrat',
                                           color: Colors.blueGrey,
                                           fontSize: 15.0,
                                           fontWeight: FontWeight.w600,
@@ -172,6 +173,7 @@ class RecentChats extends StatelessWidget {
                                                   child: Text(
                                                     "NOVO",
                                                     style: TextStyle(
+                                                      fontFamily: 'Monteserrat',
                                                       color: Colors.white,
                                                       fontSize: 13.0,
                                                       fontWeight:

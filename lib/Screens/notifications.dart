@@ -49,10 +49,11 @@ class _NotificationsState extends State<Notifications> {
           centerTitle: true,
           automaticallyImplyLeading: false,
           title: Text(
-            'Notifications'.tr().toString(),
+            'PPPUNI'.tr().toString(),
             style: TextStyle(
               color: Colors.white,
-              fontSize: 18.0,
+              fontSize: 27.0,
+              fontFamily: 'Monteserrat',
               fontWeight: FontWeight.bold,
               letterSpacing: 1.0,
             ),
@@ -105,13 +106,19 @@ class _NotificationsState extends State<Notifications> {
                         return Center(
                             child: Text(
                           "No Notification".tr().toString(),
-                          style: TextStyle(color: secondryColor, fontSize: 16),
+                          style: TextStyle(
+                              fontFamily: 'Monteserrat',
+                              color: secondryColor,
+                              fontSize: 16),
                         ));
                       else if (snapshot.data.documents.length == 0) {
                         return Center(
                             child: Text(
                           "No Notification".tr().toString(),
-                          style: TextStyle(color: secondryColor, fontSize: 16),
+                          style: TextStyle(
+                              fontFamily: 'Monteserrat',
+                              color: secondryColor,
+                              fontSize: 16),
                         ));
                       }
                       return Expanded(

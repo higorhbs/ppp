@@ -51,8 +51,8 @@ class EditProfileState extends State<EditProfile> {
     //_ad = _ads.myBanner();
     //super.initState();
     //_ad
-      //..load()
-      //..show();
+    //..load()
+    //..show();
   }
 
   @override
@@ -137,6 +137,7 @@ class EditProfileState extends State<EditProfile> {
                               Text(
                                 " Gallery".tr().toString(),
                                 style: TextStyle(
+                                    fontFamily: 'Monteserrat',
                                     fontSize: 15,
                                     color: Colors.black,
                                     decoration: TextDecoration.none),
@@ -174,6 +175,7 @@ class EditProfileState extends State<EditProfile> {
                                   .tr()
                                   .toString(),
                               style: TextStyle(
+                                  fontFamily: 'Monteserrat',
                                   fontSize: 15,
                                   color: Colors.black,
                                   decoration: TextDecoration.none),
@@ -272,7 +274,7 @@ class EditProfileState extends State<EditProfile> {
           elevation: 0,
           title: Text(
             "Edit Profile".tr().toString(),
-            style: TextStyle(color: Colors.white),
+            style: TextStyle(fontFamily: 'Monteserrat', color: Colors.white),
           ),
           flexibleSpace: Container(
               decoration: BoxDecoration(
@@ -689,7 +691,7 @@ class EditProfileState extends State<EditProfile> {
     if (widget.currentUser.imageUrl[index] != null) {
       try {
         StorageReference _ref = await FirebaseStorage.instance
-            .getReferenceFromUrl(widget.currentUser.imageUrl[(index-1)]);
+            .getReferenceFromUrl(widget.currentUser.imageUrl[(index - 1)]);
         print(_ref.path);
         await _ref.delete();
       } catch (e) {

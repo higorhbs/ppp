@@ -119,7 +119,7 @@ class _ProfileState extends State<Profile> {
                                 style: TextStyle(
                                   fontSize: 27,
                                   fontWeight: FontWeight.bold,
-                                  fontFamily: 'Montserrat',
+                                  fontFamily: 'Monteserrat',
                                 ),
                               ),
                               TextSpan(
@@ -127,7 +127,7 @@ class _ProfileState extends State<Profile> {
                                 style: TextStyle(
                                   fontSize: 27,
                                   fontWeight: FontWeight.bold,
-                                  fontFamily: 'Montserrat',
+                                  fontFamily: 'Monteserrat',
                                   color: Colors.white,
                                 ),
                               ),
@@ -228,7 +228,7 @@ CachedNetworkImage(
                   ? "${widget.currentUser.name}, ${widget.currentUser.age}"
                   : "",
               style: TextStyle(
-                fontFamily: 'Montserrat',
+                fontFamily: 'Monteserrat',
                 color: Colors.black87,
                 fontWeight: FontWeight.w500,
                 fontSize: 30,
@@ -240,6 +240,7 @@ CachedNetworkImage(
                   : "",
               textAlign: TextAlign.center,
               style: TextStyle(
+                  fontFamily: 'Monteserrat',
                   color: Colors.black54,
                   fontWeight: FontWeight.w400,
                   fontSize: 20),

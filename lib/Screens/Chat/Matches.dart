@@ -78,6 +78,7 @@ class Matches extends StatelessWidget {
                                 Text(
                                   matches[index].name,
                                   style: TextStyle(
+                                    fontFamily: 'Monteserrat',
                                     color: secondryColor,
                                     fontSize: 16.0,
                                     fontWeight: FontWeight.w600,
@@ -92,7 +93,10 @@ class Matches extends StatelessWidget {
                   : Center(
                       child: Text(
                       "No match found".tr().toString(),
-                      style: TextStyle(color: secondryColor, fontSize: 16),
+                      style: TextStyle(
+                          fontFamily: 'Monteserrat',
+                          color: secondryColor,
+                          fontSize: 16),
                     ))),
         ],
       ),

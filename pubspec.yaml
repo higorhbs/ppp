@@ -90,6 +90,13 @@ flutter:
    - asset/translation/
    - asset/arquivos/eula.txt
 
+
+  fonts:
+    - family: Monteserrat
+      fonts:
+        - asset: fonts/Montserrat-Black.ttf
+        - asset: fonts/Montserrat-Bold.ttf
+          style: italic
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
