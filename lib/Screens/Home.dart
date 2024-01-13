@@ -207,7 +207,7 @@ class _CardPicturesState extends State<CardPictures>
                                                                 child:
                                                                     Container(
                                                                   height: 40,
-                                                                  width: 100,
+                                                                  width: 120,
                                                                   decoration: BoxDecoration(
                                                                       shape: BoxShape
                                                                           .rectangle,
