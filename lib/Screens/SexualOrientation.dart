@@ -64,7 +64,7 @@ class _SexualOrientationState extends State<SexualOrientation> {
               Padding(
                 child: Text(
                   "My sexual\norientation is".tr().toString(),
-                  style: TextStyle(fontSize: 40),
+                  style: TextStyle(fontFamily: 'Monteserrat', fontSize: 40),
                 ),
                 padding: EdgeInsets.only(left: 50, top: 80),
               ),
@@ -85,6 +85,7 @@ class _SexualOrientationState extends State<SexualOrientation> {
                           child: Center(
                               child: Text("${orientationlist[index]["name"]}",
                                   style: TextStyle(
+                                      fontFamily: 'Monteserrat',
                                       fontSize: 20,
                                       color: orientationlist[index]["ontap"]
                                           ? primaryColor
@@ -178,6 +179,7 @@ class _SexualOrientationState extends State<SexualOrientation> {
                                       child: Text(
                                     "CONTINUE".tr().toString(),
                                     style: TextStyle(
+                                        fontFamily: 'Monteserrat',
                                         fontSize: 15,
                                         color: textColor,
                                         fontWeight: FontWeight.bold),
@@ -217,6 +219,7 @@ class _SexualOrientationState extends State<SexualOrientation> {
                                       child: Text(
                                     "CONTINUE".tr().toString(),
                                     style: TextStyle(
+                                        fontFamily: 'Monteserrat',
                                         fontSize: 15,
                                         color: secondryColor,
                                         fontWeight: FontWeight.bold),

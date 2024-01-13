@@ -33,7 +33,10 @@ class _UpdateLocationState extends State<UpdateLocation> {
         title: ListTile(
           title: Text(
             "Use current location".tr().toString(),
-            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+            style: TextStyle(
+                fontFamily: 'Monteserrat',
+                color: Colors.white,
+                fontWeight: FontWeight.bold),
           ),
           subtitle: Text(_newAddress != null
               ? _newAddress['PlaceName'] ?? 'Fetching..'.tr().toString()

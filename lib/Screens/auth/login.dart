@@ -80,6 +80,7 @@ class Login extends StatelessWidget {
                             Text(
                               "PPPUNI",
                               style: TextStyle(
+                                fontFamily: 'Monteserrat',
                                 fontSize: 30,
                                 fontWeight: FontWeight.bold,
                               ),
@@ -109,8 +110,8 @@ class Login extends StatelessWidget {
                               .toString(),
                           textAlign: TextAlign.center,
                           style: TextStyle(
+                            fontFamily: 'Monteserrat',
                             color: Colors.white,
-                            fontFamily: 'Inter',
                             fontSize: 12.43,
                           ),
                         ),
@@ -154,7 +155,7 @@ class Login extends StatelessWidget {
                             "ENTRE COM O TELEFONE".tr().toString(),
                             style: TextStyle(
                               color: Colors.white,
-                              fontFamily: 'Inter',
+                              fontFamily: 'Monteserrat',
                               fontSize: 14.78,
                             ),
                           ),
@@ -175,7 +176,7 @@ class Login extends StatelessWidget {
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.white,
-                    fontFamily: 'Inter',
+                    fontFamily: 'Monteserrat',
                     fontSize: 12.43,
                   ),
                 ),

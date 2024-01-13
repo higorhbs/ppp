@@ -65,7 +65,10 @@ class TabbarState extends State<Tabbar> {
             DialogButton(
               child: Text(
                 "Ok".tr().toString(),
-                style: TextStyle(color: Colors.white, fontSize: 20),
+                style: TextStyle(
+                    fontFamily: 'Monteserrat',
+                    color: Colors.white,
+                    fontSize: 20),
               ),
               onPressed: () => Navigator.pop(context),
               width: 120,
@@ -77,7 +80,8 @@ class TabbarState extends State<Tabbar> {
     _getAccessItems();
     _getCurrentUser();
     _getMatches();
-  ///  _getpastPurchases();
+
+    ///  _getpastPurchases();
   }
 
   Map items = {};
@@ -161,11 +165,11 @@ class TabbarState extends State<Tabbar> {
 
     _firebaseMessaging.getToken().then((token) {
       print(token);
-   // Mario tirou, pois estava entrando em loop infinito quando 
-   // acessava em dois aparelhos ao mesmo tempo   
-   //   docRef.document(user.id).updateData({
-   //     'pushToken': token,
-   //   });
+      // Mario tirou, pois estava entrando em loop infinito quando
+      // acessava em dois aparelhos ao mesmo tempo
+      //   docRef.document(user.id).updateData({
+      //     'pushToken': token,
+      //   });
     });
 
     _firebaseMessaging.configure(

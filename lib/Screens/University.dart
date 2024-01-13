@@ -53,7 +53,7 @@ class _UniversityState extends State<University> {
                   Padding(
                     child: Text(
                       "Minha\nuniversidade é:".tr().toString(),
-                      style: TextStyle(fontSize: 35),
+                      style: TextStyle(fontFamily: 'Monteserrat', fontSize: 35),
                     ),
                     padding: EdgeInsets.only(left: 50, top: 120),
                   ),
@@ -70,8 +70,10 @@ class _UniversityState extends State<University> {
                           borderSide: BorderSide(color: primaryColor)),
                       helperText:
                           "This is how it will appear in App.".tr().toString(),
-                      helperStyle:
-                          TextStyle(color: secondryColor, fontSize: 15),
+                      helperStyle: TextStyle(
+                          fontFamily: 'Monteserrat',
+                          color: secondryColor,
+                          fontSize: 15),
                     ),
                     onChanged: (value) {
                       setState(() {
@@ -109,6 +111,7 @@ class _UniversityState extends State<University> {
                                   child: Text(
                                 "CONTINUE".tr().toString(),
                                 style: TextStyle(
+                                    fontFamily: 'Monteserrat',
                                     fontSize: 15,
                                     color: textColor,
                                     fontWeight: FontWeight.bold),
@@ -151,6 +154,7 @@ class _UniversityState extends State<University> {
                                   child: Text(
                                 "CONTINUE".tr().toString(),
                                 style: TextStyle(
+                                    fontFamily: 'Monteserrat',
                                     fontSize: 15,
                                     color: secondryColor,
                                     fontWeight: FontWeight.bold),

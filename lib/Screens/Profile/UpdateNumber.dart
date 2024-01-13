@@ -15,7 +15,7 @@ class UpdateNumber extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           "Phone number settings".tr().toString(),
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(fontFamily: 'Monteserrat', color: Colors.white),
         ),
         flexibleSpace: Container(
             decoration: BoxDecoration(
@@ -45,7 +45,10 @@ class UpdateNumber extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(15.0),
               child: Text("Phone number".tr().toString(),
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                  style: TextStyle(
+                      fontFamily: 'Monteserrat',
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold)),
             ),
             Card(
                 child: ListTile(
@@ -53,7 +56,10 @@ class UpdateNumber extends StatelessWidget {
                   currentUser.phoneNumber != null
                       ? "${currentUser.phoneNumber}"
                       : "Verify Phone number".tr().toString(),
-                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.w400)),
+                  style: TextStyle(
+                      fontFamily: 'Monteserrat',
+                      fontSize: 15,
+                      fontWeight: FontWeight.w400)),
               trailing: Icon(
                 currentUser.phoneNumber != null ? Icons.done : null,
                 color: primaryColor,
@@ -63,6 +69,7 @@ class UpdateNumber extends StatelessWidget {
               padding: const EdgeInsets.only(left: 15),
               child: Text("Verified phone number".tr().toString(),
                   style: TextStyle(
+                      fontFamily: 'Monteserrat',
                       fontSize: 13,
                       fontWeight: FontWeight.w400,
                       color: secondryColor)),
@@ -76,6 +83,7 @@ class UpdateNumber extends StatelessWidget {
                       padding: const EdgeInsets.all(18.0),
                       child: Text("Update my phone number".tr().toString(),
                           style: TextStyle(
+                              fontFamily: 'Monteserrat',
                               fontSize: 14,
                               fontWeight: FontWeight.w500,
                               color: primaryColor)),

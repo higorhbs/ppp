@@ -83,6 +83,7 @@ class _OTPState extends State<OTP> {
                           "Phone Number\nChanged\nSuccessfully".tr().toString(),
                           textAlign: TextAlign.center,
                           style: TextStyle(
+                              fontFamily: 'Monteserrat',
                               decoration: TextDecoration.none,
                               color: Colors.black,
                               fontSize: 20),
@@ -141,6 +142,7 @@ class _OTPState extends State<OTP> {
                             "Verified\n Successfully".tr().toString(),
                             textAlign: TextAlign.center,
                             style: TextStyle(
+                                fontFamily: 'Monteserrat',
                                 decoration: TextDecoration.none,
                                 color: Colors.black,
                                 fontSize: 20),
@@ -201,6 +203,7 @@ class _OTPState extends State<OTP> {
                         "OTP\nSent".tr().toString(),
                         textAlign: TextAlign.center,
                         style: TextStyle(
+                            fontFamily: 'Monteserrat',
                             decoration: TextDecoration.none,
                             color: Colors.black,
                             fontSize: 20),
@@ -247,6 +250,7 @@ class _OTPState extends State<OTP> {
                     "Verifique seu número".tr().toString(),
                     textAlign: TextAlign.left,
                     style: TextStyle(
+                      fontFamily: 'Monteserrat',
                       fontSize: 25,
                       fontWeight: FontWeight.bold,
                       color: Color(0xFF444142), // Defina a cor corretamente
@@ -322,7 +326,10 @@ class _OTPState extends State<OTP> {
                       .tr()
                       .toString(),
                   textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 10, fontWeight: FontWeight.w400),
+                  style: TextStyle(
+                      fontFamily: 'Monteserrat',
+                      fontSize: 10,
+                      fontWeight: FontWeight.w400),
                 ),
               ),
               Padding(
@@ -352,6 +359,7 @@ class _OTPState extends State<OTP> {
                               child: Text(
                             "CONTINUE".tr().toString(),
                             style: TextStyle(
+                                fontFamily: 'Monteserrat',
                                 fontSize: 15,
                                 color: textColor,
                                 fontWeight: FontWeight.bold),
@@ -385,6 +393,7 @@ class _OTPState extends State<OTP> {
                           child: Text(
                         "CONTINUE".tr().toString(),
                         style: TextStyle(
+                            fontFamily: 'Monteserrat',
                             fontSize: 15,
                             color: Colors.white,
                             fontWeight: FontWeight.bold),

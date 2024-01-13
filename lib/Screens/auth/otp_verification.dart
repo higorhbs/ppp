@@ -59,6 +59,7 @@ class _VerificationState extends State<Verification> {
                           "Phone Number\nChanged\nSuccessfully".tr().toString(),
                           textAlign: TextAlign.center,
                           style: TextStyle(
+                              fontFamily: 'Monteserrat',
                               decoration: TextDecoration.none,
                               color: Colors.black,
                               fontSize: 20),
@@ -104,6 +105,7 @@ class _VerificationState extends State<Verification> {
                       TextSpan(
                           text: widget.phoneNumber,
                           style: TextStyle(
+                              fontFamily: 'Monteserrat',
                               color: primaryColor,
                               fontStyle: FontStyle.italic,
                               fontWeight: FontWeight.bold,
@@ -143,6 +145,7 @@ class _VerificationState extends State<Verification> {
                         text: " REENVIAR".tr().toString(),
                         recognizer: onTapRecognizer,
                         style: TextStyle(
+                            fontFamily: 'Monteserrat',
                             color: Color(0xFF555555),
                             fontWeight: FontWeight.bold,
                             fontSize: 16))
@@ -171,6 +174,7 @@ class _VerificationState extends State<Verification> {
                       child: Text(
                     "VERIFICAR".tr().toString(),
                     style: TextStyle(
+                        fontFamily: 'Monteserrat',
                         fontSize: 18,
                         color: textColor,
                         fontWeight: FontWeight.bold),
@@ -239,6 +243,7 @@ class _VerificationState extends State<Verification> {
                                               .toString(),
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
+                                              fontFamily: 'Monteserrat',
                                               decoration: TextDecoration.none,
                                               color: Colors.black,
                                               fontSize: 20),

@@ -57,7 +57,7 @@ class _UserDOBState extends State<UserDOB> {
                       "Por Favor,\nInsira sua data de nascimento:"
                           .tr()
                           .toString(),
-                      style: TextStyle(fontSize: 28),
+                      style: TextStyle(fontFamily: 'Monteserrat', fontSize: 28),
                     ),
                     padding: EdgeInsets.only(left: 50, top: 120),
                   ),
@@ -142,6 +142,7 @@ class _UserDOBState extends State<UserDOB> {
                                   child: Text(
                                 "CONTINUE".tr().toString(),
                                 style: TextStyle(
+                                    fontFamily: 'Monteserrat',
                                     fontSize: 15,
                                     color: textColor,
                                     fontWeight: FontWeight.bold),
@@ -181,6 +182,7 @@ class _UserDOBState extends State<UserDOB> {
                                   child: Text(
                                 "CONTINUE".tr().toString(),
                                 style: TextStyle(
+                                    fontFamily: 'Monteserrat',
                                     fontSize: 15,
                                     color: secondryColor,
                                     fontWeight: FontWeight.bold),

@@ -105,7 +105,8 @@ class AllowLocation extends StatelessWidget {
                     child: RichText(
                       text: TextSpan(
                         text: "Enable location".tr().toString(),
-                        style: TextStyle(color: Colors.black, fontSize: 35),
+                        style: TextStyle(color: Colors.black,
+                        fontFamily:'Monteserrat', fontSize: 35),
                         children: [
                           TextSpan(
                               text:

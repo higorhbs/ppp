@@ -75,7 +75,7 @@ class _UserNameState extends State<UserName> {
                   Padding(
                     child: Text(
                       "My first\nname is".tr().toString(),
-                      style: TextStyle(fontSize: 40),
+                      style: TextStyle(fontFamily: 'Monteserrat', fontSize: 40),
                     ),
                     padding: EdgeInsets.only(left: 50, top: 120),
                   ),
@@ -85,7 +85,7 @@ class _UserNameState extends State<UserName> {
                 padding: const EdgeInsets.symmetric(horizontal: 50),
                 child: Container(
                   child: TextFormField(
-                    style: TextStyle(fontSize: 23),
+                    style: TextStyle(fontFamily: 'Monteserrat', fontSize: 23),
                     decoration: InputDecoration(
                       hintText: "Enter your first name".tr().toString(),
                       focusedBorder: UnderlineInputBorder(
@@ -93,8 +93,10 @@ class _UserNameState extends State<UserName> {
                       ),
                       helperText:
                           "É assim que aparecerá no PPP.".tr().toString(),
-                      helperStyle:
-                          TextStyle(color: secondryColor, fontSize: 15),
+                      helperStyle: TextStyle(
+                          fontFamily: 'Monteserrat',
+                          color: secondryColor,
+                          fontSize: 15),
                       alignLabelWithHint:
                           true, // Esta propriedade alinha o helperText com a ponta do hintText
                     ),
@@ -134,6 +136,7 @@ class _UserNameState extends State<UserName> {
                                   child: Text(
                                 "CONTINUE".tr().toString(),
                                 style: TextStyle(
+                                    fontFamily: 'Monteserrat',
                                     fontSize: 15,
                                     color: textColor,
                                     fontWeight: FontWeight.bold),
@@ -165,6 +168,7 @@ class _UserNameState extends State<UserName> {
                                   child: Text(
                                 "CONTINUE".tr().toString(),
                                 style: TextStyle(
+                                  fontFamily:'Monteserrat',
                                     fontSize: 15,
                                     color: secondryColor,
                                     fontWeight: FontWeight.bold),

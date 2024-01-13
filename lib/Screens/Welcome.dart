@@ -35,6 +35,7 @@ class _WelcomeState extends State<Welcome> {
                           "PPP",
                           textAlign: TextAlign.center,
                           style: TextStyle(
+                              fontFamily: 'Monteserrat',
                               fontSize: 35,
                               color: primaryColor,
                               fontWeight: FontWeight.bold,
@@ -47,7 +48,9 @@ class _WelcomeState extends State<Welcome> {
                                 .tr()
                                 .toString(),
                             style: TextStyle(
-                                fontSize: 18, fontWeight: FontWeight.bold),
+                                fontFamily: 'Monteserrat',
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold),
                           ),
                         ),
                         ListTile(
@@ -55,13 +58,16 @@ class _WelcomeState extends State<Welcome> {
                           title: Text(
                             "Be yourself.".tr().toString(),
                             style: TextStyle(
-                                fontSize: 18, fontWeight: FontWeight.bold),
+                                fontFamily: 'Monteserrat',
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold),
                           ),
                           subtitle: Text(
                             "Make sure your photos, age, and bio are true to who you are."
                                 .tr()
                                 .toString(),
                             style: TextStyle(
+                              fontFamily: 'Monteserrat',
                               fontSize: 17,
                             ),
                           ),
@@ -71,13 +77,16 @@ class _WelcomeState extends State<Welcome> {
                           title: Text(
                             "Play it cool.".tr().toString(),
                             style: TextStyle(
-                                fontSize: 18, fontWeight: FontWeight.bold),
+                                fontFamily: 'Monteserrat',
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold),
                           ),
                           subtitle: Text(
                             "Respect other and treat them as you would like to be treated"
                                 .tr()
                                 .toString(),
                             style: TextStyle(
+                              fontFamily: 'Monteserrat',
                               fontSize: 17,
                             ),
                           ),
@@ -87,13 +96,16 @@ class _WelcomeState extends State<Welcome> {
                           title: Text(
                             "Stay safe.".tr().toString(),
                             style: TextStyle(
-                                fontSize: 18, fontWeight: FontWeight.bold),
+                                fontFamily: 'Monteserrat',
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold),
                           ),
                           subtitle: Text(
                             "Don't be too quick to give out personal information."
                                 .tr()
                                 .toString(),
                             style: TextStyle(
+                              fontFamily: 'Monteserrat',
                               fontSize: 17,
                             ),
                           ),
@@ -103,11 +115,14 @@ class _WelcomeState extends State<Welcome> {
                           title: Text(
                             "Be proactive.".tr().toString(),
                             style: TextStyle(
-                                fontSize: 18, fontWeight: FontWeight.bold),
+                                fontFamily: 'Monteserrat',
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold),
                           ),
                           subtitle: Text(
                             "Always report bad behavior.".tr().toString(),
                             style: TextStyle(
+                              fontFamily: 'Monteserrat',
                               fontSize: 17,
                             ),
                           ),
@@ -144,6 +159,7 @@ class _WelcomeState extends State<Welcome> {
                             child: Text(
                           "GOT IT".tr().toString(),
                           style: TextStyle(
+                              fontFamily: 'Monteserrat',
                               fontSize: 15,
                               color: textColor,
                               fontWeight: FontWeight.bold),

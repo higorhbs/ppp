@@ -50,7 +50,7 @@ class _ShowGenderState extends State<ShowGender> {
           Padding(
             child: Text(
               "Show me".tr().toString(),
-              style: TextStyle(fontSize: 40),
+              style: TextStyle(fontFamily: 'Monteserrat', fontSize: 40),
             ),
             padding: EdgeInsets.only(left: 50, top: 120),
           ),
@@ -67,6 +67,7 @@ class _ShowGenderState extends State<ShowGender> {
                     child: Center(
                         child: Text("MEN".tr().toString(),
                             style: TextStyle(
+                                fontFamily: 'Monteserrat',
                                 fontSize: 20,
                                 color: man ? primaryColor : secondryColor,
                                 fontWeight: FontWeight.bold))),
@@ -94,6 +95,7 @@ class _ShowGenderState extends State<ShowGender> {
                       child: Center(
                           child: Text("WOMEN".tr().toString(),
                               style: TextStyle(
+                                  fontFamily: 'Monteserrat',
                                   fontSize: 20,
                                   color: woman ? primaryColor : secondryColor,
                                   fontWeight: FontWeight.bold))),
@@ -125,6 +127,7 @@ class _ShowGenderState extends State<ShowGender> {
                     child: Center(
                         child: Text("EVERYONE".tr().toString(),
                             style: TextStyle(
+                                fontFamily: 'Monteserrat',
                                 fontSize: 20,
                                 color: eyeryone ? primaryColor : secondryColor,
                                 fontWeight: FontWeight.bold))),
@@ -176,6 +179,7 @@ class _ShowGenderState extends State<ShowGender> {
                               child: Text(
                             "CONTINUE".tr().toString(),
                             style: TextStyle(
+                                fontFamily: 'Monteserrat',
                                 fontSize: 15,
                                 color: textColor,
                                 fontWeight: FontWeight.bold),
@@ -215,6 +219,7 @@ class _ShowGenderState extends State<ShowGender> {
                               child: Text(
                             "CONTINUE".tr().toString(),
                             style: TextStyle(
+                                fontFamily: 'Monteserrat',
                                 fontSize: 15,
                                 color: secondryColor,
                                 fontWeight: FontWeight.bold),

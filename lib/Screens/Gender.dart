@@ -55,7 +55,7 @@ class _GenderState extends State<Gender> {
           Padding(
             child: Text(
               "I am a".tr().toString(),
-              style: TextStyle(fontSize: 40),
+              style: TextStyle(fontFamily: 'Monteserrat', fontSize: 40),
             ),
             padding: EdgeInsets.only(left: 50, top: 120),
           ),
@@ -72,6 +72,7 @@ class _GenderState extends State<Gender> {
                     child: Center(
                         child: Text("MAN".tr().toString(),
                             style: TextStyle(
+                                fontFamily: 'Monteserrat',
                                 fontSize: 20,
                                 color: man ? primaryColor : secondryColor,
                                 fontWeight: FontWeight.bold))),
@@ -99,6 +100,7 @@ class _GenderState extends State<Gender> {
                       child: Center(
                           child: Text("WOMAN".tr().toString(),
                               style: TextStyle(
+                                  fontFamily: 'Monteserrat',
                                   fontSize: 20,
                                   color: woman ? primaryColor : secondryColor,
                                   fontWeight: FontWeight.bold))),
@@ -130,6 +132,7 @@ class _GenderState extends State<Gender> {
                     child: Center(
                         child: Text("OTHER".tr().toString(),
                             style: TextStyle(
+                                fontFamily: 'Monteserrat',
                                 fontSize: 20,
                                 color: other ? primaryColor : secondryColor,
                                 fontWeight: FontWeight.bold))),
@@ -200,6 +203,7 @@ class _GenderState extends State<Gender> {
                             "CONTINUE".tr().toString(),
                             style: TextStyle(
                                 fontSize: 15,
+                                fontFamily: 'Monteserrat',
                                 color: textColor,
                                 fontWeight: FontWeight.bold),
                           ))),
@@ -260,6 +264,7 @@ class _GenderState extends State<Gender> {
                           child: Text(
                             "CONTINUE".tr().toString(),
                             style: TextStyle(
+                              fontFamily: 'Monteserrat',
                               fontSize: 15,
                               color: Colors.white,
                               fontWeight: FontWeight.bold,

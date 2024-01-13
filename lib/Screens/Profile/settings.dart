@@ -101,7 +101,7 @@ class _SettingsState extends State<Settings> {
       appBar: AppBar(
           title: Text(
             "Settings".tr().toString(),
-            style: TextStyle(color: Colors.white),
+            style: TextStyle(fontFamily: 'Monteserrat', color: Colors.white),
           ),
           flexibleSpace: Container(
               decoration: BoxDecoration(
@@ -136,7 +136,10 @@ class _SettingsState extends State<Settings> {
                   padding: const EdgeInsets.all(12.0),
                   child: Text(
                     "Account settings".tr().toString(),
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
+                    style: TextStyle(
+                        fontFamily: 'Monteserrat',
+                        fontSize: 18,
+                        fontWeight: FontWeight.w500),
                   ),
                 ),
                 ListTile(
@@ -156,7 +159,9 @@ class _SettingsState extends State<Settings> {
                               widget.currentUser.phoneNumber != null
                                   ? "${widget.currentUser.phoneNumber}"
                                   : "Verify Now".tr().toString(),
-                              style: TextStyle(color: secondryColor),
+                              style: TextStyle(
+                                  fontFamily: 'Monteserrat',
+                                  color: secondryColor),
                             ),
                           ),
                           Icon(
@@ -185,7 +190,10 @@ class _SettingsState extends State<Settings> {
                   padding: const EdgeInsets.all(10.0),
                   child: Text(
                     "Discovery settings".tr().toString(),
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
+                    style: TextStyle(
+                        fontFamily: 'Monteserrat',
+                        fontSize: 18,
+                        fontWeight: FontWeight.w500),
                   ),
                 ),
                 Padding(
@@ -196,6 +204,7 @@ class _SettingsState extends State<Settings> {
                       leading: Text(
                         "Current location : ".tr().toString(),
                         style: TextStyle(
+                          fontFamily: 'Monteserrat',
                           fontSize: 14,
                         ),
                       ),
@@ -223,6 +232,7 @@ class _SettingsState extends State<Settings> {
                                   "Change location".tr().toString(),
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
+                                    fontFamily: 'Monteserrat',
                                     color: Colors.blue,
                                     fontSize: 16,
                                     fontWeight: FontWeight.bold,
@@ -272,6 +282,7 @@ class _SettingsState extends State<Settings> {
                           Text(
                             "Show me".tr().toString(),
                             style: TextStyle(
+                                fontFamily: 'Monteserrat',
                                 fontSize: 18,
                                 color: primaryColor,
                                 fontWeight: FontWeight.w500),
@@ -318,13 +329,15 @@ class _SettingsState extends State<Settings> {
                         title: Text(
                           "Maximum distance".tr().toString(),
                           style: TextStyle(
+                              fontFamily: 'Monteserrat',
                               fontSize: 18,
                               color: primaryColor,
                               fontWeight: FontWeight.w500),
                         ),
                         trailing: Text(
                           "$distance Km.",
-                          style: TextStyle(fontSize: 16),
+                          style: TextStyle(
+                              fontFamily: 'Monteserrat', fontSize: 16),
                         ),
                         subtitle: Slider(
                             value: distance.toDouble(),
@@ -354,6 +367,7 @@ class _SettingsState extends State<Settings> {
                         title: Text(
                           "Age range".tr().toString(),
                           style: TextStyle(
+                              fontFamily: 'Monteserrat',
                               fontSize: 18,
                               color: primaryColor,
                               fontWeight: FontWeight.w500),
@@ -389,7 +403,10 @@ class _SettingsState extends State<Settings> {
                 ListTile(
                   title: Text(
                     "App settings".tr().toString(),
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
+                    style: TextStyle(
+                        fontFamily: 'Monteserrat',
+                        fontSize: 18,
+                        fontWeight: FontWeight.w500),
                   ),
                   subtitle: Card(
                     child: Padding(
@@ -403,6 +420,7 @@ class _SettingsState extends State<Settings> {
                             child: Text(
                               "Notifications".tr().toString(),
                               style: TextStyle(
+                                  fontFamily: 'Monteserrat',
                                   fontSize: 18,
                                   color: primaryColor,
                                   fontWeight: FontWeight.w500),
@@ -444,6 +462,7 @@ class _SettingsState extends State<Settings> {
                                         child: Text(
                                           "Change Language".tr().toString(),
                                           style: TextStyle(
+                                              fontFamily: 'Monteserrat',
                                               fontSize: 18,
                                               color: primaryColor,
                                               fontWeight: FontWeight.w500),
@@ -459,6 +478,7 @@ class _SettingsState extends State<Settings> {
                                               child: Text(
                                                 "English".tr().toString(),
                                                 style: TextStyle(
+                                                    fontFamily: 'Monteserrat',
                                                     color: Colors.pink),
                                               ),
                                               onPressed: () async {
@@ -593,6 +613,7 @@ class _SettingsState extends State<Settings> {
                           child: Text(
                             "Invite your friends Android".tr().toString(),
                             style: TextStyle(
+                                fontFamily: 'Monteserrat',
                                 color: primaryColor,
                                 fontSize: 15,
                                 fontWeight: FontWeight.w500),
@@ -617,6 +638,7 @@ class _SettingsState extends State<Settings> {
                           child: Text(
                             "Invite your friends iPhone".tr().toString(),
                             style: TextStyle(
+                                fontFamily: 'Monteserrat',
                                 color: primaryColor,
                                 fontSize: 15,
                                 fontWeight: FontWeight.w500),
@@ -641,7 +663,9 @@ class _SettingsState extends State<Settings> {
                           child: Text(
                             "Logout".tr().toString(),
                             style: TextStyle(
-                                fontSize: 15, fontWeight: FontWeight.w500),
+                                fontFamily: 'Monteserrat',
+                                fontSize: 15,
+                                fontWeight: FontWeight.w500),
                           ),
                         ),
                       ),
@@ -693,6 +717,7 @@ class _SettingsState extends State<Settings> {
                           child: Text(
                             "Delete Account".tr().toString(),
                             style: TextStyle(
+                                fontFamily: 'Monteserrat',
                                 color: primaryColor,
                                 fontSize: 15,
                                 fontWeight: FontWeight.w500),
@@ -781,6 +806,7 @@ class _SettingsState extends State<Settings> {
                       child: Text(
                         'New address:'.tr().toString(),
                         style: TextStyle(
+                            fontFamily: 'Monteserrat',
                             color: Colors.black,
                             fontSize: 18,
                             fontWeight: FontWeight.w500,
@@ -800,6 +826,7 @@ class _SettingsState extends State<Settings> {
                         child: Text(
                           _address['PlaceName'] ?? '',
                           style: TextStyle(
+                              fontFamily: 'Monteserrat',
                               color: Colors.black,
                               fontSize: 16,
                               fontWeight: FontWeight.w300,
@@ -813,7 +840,8 @@ class _SettingsState extends State<Settings> {
                   color: Colors.white,
                   child: Text(
                     "Confirm".tr().toString(),
-                    style: TextStyle(color: primaryColor),
+                    style: TextStyle(
+                        fontFamily: 'Monteserrat', color: primaryColor),
                   ),
                   onPressed: () async {
                     Navigator.pop(context);
@@ -860,6 +888,7 @@ class _SettingsState extends State<Settings> {
                                             "location\nchanged".tr().toString(),
                                             textAlign: TextAlign.center,
                                             style: TextStyle(
+                                                fontFamily: 'Monteserrat',
                                                 decoration: TextDecoration.none,
                                                 color: Colors.black,
                                                 fontSize: 20),

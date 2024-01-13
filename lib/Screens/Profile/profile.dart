@@ -345,6 +345,7 @@ CachedNetworkImage(
                     title: new Text(
                       "Settings".tr().toString(),
                       style: TextStyle(
+                        fontFamily: 'Monteserrat',
                         color: Colors.black,
                       ),
                     ),
@@ -365,6 +366,7 @@ CachedNetworkImage(
                   title: new Text(
                     "Add media".tr().toString(),
                     style: TextStyle(
+                      fontFamily: 'Monteserrat',
                       color: Colors.black,
                     ),
                   ),
@@ -379,6 +381,7 @@ CachedNetworkImage(
                   title: new Text(
                     "Edit Info".tr().toString(),
                     style: TextStyle(
+                      fontFamily: 'Monteserrat',
                       color: Colors.black,
                     ),
                   ),
@@ -397,6 +400,7 @@ CachedNetworkImage(
                   title: new Text(
                     "Logout".tr().toString(),
                     style: TextStyle(
+                      fontFamily: 'Monteserrat',
                       color: Colors.black,
                     ),
                   ),
