@@ -373,6 +373,7 @@ class EditProfileState extends State<EditProfile> {
                                                         .tr()
                                                         .toString(),
                                                     style: TextStyle(
+                                                      fontFamily: 'Monteserrat',
                                                       color: Colors.black,
                                                     ),
                                                   )
@@ -463,6 +464,7 @@ class EditProfileState extends State<EditProfile> {
                             child: Text(
                           "Add media".tr().toString(),
                           style: TextStyle(
+                              fontFamily: 'Monteserrat',
                               fontSize: 15,
                               color: textColor,
                               fontWeight: FontWeight.bold),
@@ -484,6 +486,7 @@ class EditProfileState extends State<EditProfile> {
                           title: Text(
                             "About ",
                             style: TextStyle(
+                                fontFamily: 'Monteserrat',
                                 fontWeight: FontWeight.w500,
                                 fontSize: 16,
                                 color: Colors.black87),
@@ -504,6 +507,7 @@ class EditProfileState extends State<EditProfile> {
                           title: Text(
                             "Job title".tr().toString(),
                             style: TextStyle(
+                                fontFamily: 'Monteserrat',
                                 fontWeight: FontWeight.w500,
                                 fontSize: 16,
                                 color: Colors.black87),
@@ -522,6 +526,7 @@ class EditProfileState extends State<EditProfile> {
                           title: Text(
                             "Company".tr().toString(),
                             style: TextStyle(
+                                fontFamily: 'Monteserrat',
                                 fontWeight: FontWeight.w500,
                                 fontSize: 16,
                                 color: Colors.black87),
@@ -540,6 +545,7 @@ class EditProfileState extends State<EditProfile> {
                           title: Text(
                             "University".tr().toString(),
                             style: TextStyle(
+                                fontFamily: 'Monteserrat',
                                 fontWeight: FontWeight.w500,
                                 fontSize: 16,
                                 color: Colors.black87),
@@ -558,6 +564,7 @@ class EditProfileState extends State<EditProfile> {
                           title: Text(
                             "Living in".tr().toString(),
                             style: TextStyle(
+                                fontFamily: 'Monteserrat',
                                 fontWeight: FontWeight.w500,
                                 fontSize: 16,
                                 color: Colors.black87),
@@ -578,6 +585,7 @@ class EditProfileState extends State<EditProfile> {
                             title: Text(
                               "I am".tr().toString(),
                               style: TextStyle(
+                                  fontFamily: 'Monteserrat',
                                   fontWeight: FontWeight.w500,
                                   fontSize: 16,
                                   color: Colors.black87),
@@ -588,14 +596,23 @@ class EditProfileState extends State<EditProfile> {
                               isExpanded: true,
                               items: [
                                 DropdownMenuItem(
-                                  child: Text("Man".tr().toString()),
+                                  child: Text("Man".tr().toString(),
+                                      style: TextStyle(
+                                        fontFamily: 'Monteserrat',
+                                      )),
                                   value: "man",
                                 ),
                                 DropdownMenuItem(
-                                    child: Text("Woman".tr().toString()),
+                                    child: Text("Woman".tr().toString(),
+                                        style: TextStyle(
+                                          fontFamily: 'Monteserrat',
+                                        )),
                                     value: "woman"),
                                 DropdownMenuItem(
-                                    child: Text("Other".tr().toString()),
+                                    child: Text("Other".tr().toString(),
+                                        style: TextStyle(
+                                          fontFamily: 'Monteserrat',
+                                        )),
                                     value: "other"),
                               ],
                               onChanged: (val) {
@@ -615,6 +632,7 @@ class EditProfileState extends State<EditProfile> {
                             title: Text(
                               "Control your profile".tr().toString(),
                               style: TextStyle(
+                                  fontFamily: 'Monteserrat',
                                   fontWeight: FontWeight.w500,
                                   fontSize: 16,
                                   color: Colors.black87),

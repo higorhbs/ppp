@@ -150,7 +150,12 @@ class _SettingsState extends State<Settings> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
-                          Text("Phone Number".tr().toString()),
+                          Text(
+                            "Phone Number".tr().toString(),
+                            style: TextStyle(
+                              fontFamily: 'Monteserrat',
+                            ),
+                          ),
                           Padding(
                             padding: const EdgeInsets.only(
                               left: 20,
@@ -294,14 +299,29 @@ class _SettingsState extends State<Settings> {
                               isExpanded: true,
                               items: [
                                 DropdownMenuItem(
-                                  child: Text("Man".tr().toString()),
+                                  child: Text(
+                                    "Man".tr().toString(),
+                                    style: TextStyle(
+                                      fontFamily: 'Monteserrat',
+                                    ),
+                                  ),
                                   value: "man",
                                 ),
                                 DropdownMenuItem(
-                                    child: Text("Woman".tr().toString()),
+                                    child: Text(
+                                      "Woman".tr().toString(),
+                                      style: TextStyle(
+                                        fontFamily: 'Monteserrat',
+                                      ),
+                                    ),
                                     value: "woman"),
                                 DropdownMenuItem(
-                                    child: Text("Everyone".tr().toString()),
+                                    child: Text(
+                                      "Everyone".tr().toString(),
+                                      style: TextStyle(
+                                        fontFamily: 'Monteserrat',
+                                      ),
+                                    ),
                                     value: "everyone"),
                               ],
                               onChanged: (val) {
@@ -374,7 +394,8 @@ class _SettingsState extends State<Settings> {
                         ),
                         trailing: Text(
                           "${ageRange.start.round()}-${ageRange.end.round()}",
-                          style: TextStyle(fontSize: 16),
+                          style: TextStyle(
+                              fontFamily: 'Monteserrat', fontSize: 16),
                         ),
                         subtitle: RangeSlider(
                             inactiveColor: secondryColor,
@@ -428,7 +449,12 @@ class _SettingsState extends State<Settings> {
                           ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Text("Push notifications".tr().toString()),
+                            child: Text(
+                              "Push notifications".tr().toString(),
+                              style: TextStyle(
+                                fontFamily: 'Monteserrat',
+                              ),
+                            ),
                           ),
                         ],
                       ),
@@ -534,6 +560,7 @@ class _SettingsState extends State<Settings> {
                                               child: Text(
                                                 "Spanish".tr().toString(),
                                                 style: TextStyle(
+                                                    fontFamily: 'Monteserrat',
                                                     color: Colors.pink),
                                               ),
                                               onPressed: () async {
