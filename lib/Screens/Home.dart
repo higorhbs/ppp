@@ -87,7 +87,7 @@ class _CardPicturesState extends State<CardPictures>
                                         (SwiperPosition position,
                                             double progress) {
                                       return Material(
-                                          elevation: 0,
+                                          elevation: 30,
                                           child: Container(
                                             child: Stack(
                                               children: <Widget>[
@@ -108,28 +108,35 @@ class _CardPicturesState extends State<CardPictures>
                                                                     context)
                                                                 .size
                                                                 .height *
-                                                            0.99, // Ajuste aqui
+                                                            0.99,
                                                         width: MediaQuery.of(
                                                                 context)
                                                             .size
                                                             .width,
-                                                        child:
-                                                            CachedNetworkImage(
-                                                          imageUrl:
-                                                              index.imageUrl[
-                                                                      index2] ??
-                                                                  "",
-                                                          fit: BoxFit.cover,
-                                                          useOldImageOnUrlChange:
-                                                              true,
-                                                          placeholder: (context,
-                                                                  url) =>
-                                                              CupertinoActivityIndicator(
-                                                            radius: 20,
+                                                        child: Padding(
+                                                          padding: EdgeInsets.only(
+                                                              top:
+                                                                  65), // Ajuste o valor da margem superior conforme necessário
+                                                          child:
+                                                              CachedNetworkImage(
+                                                            imageUrl:
+                                                                index.imageUrl[
+                                                                        index2] ??
+                                                                    "",
+                                                            fit: BoxFit.cover,
+                                                            useOldImageOnUrlChange:
+                                                                true,
+                                                            placeholder: (context,
+                                                                    url) =>
+                                                                CupertinoActivityIndicator(
+                                                              radius: 20,
+                                                            ),
+                                                            errorWidget:
+                                                                (context, url,
+                                                                        error) =>
+                                                                    Icon(Icons
+                                                                        .error),
                                                           ),
-                                                          errorWidget: (context,
-                                                                  url, error) =>
-                                                              Icon(Icons.error),
                                                         ),
                                                       );
                                                     },
@@ -157,7 +164,7 @@ class _CardPicturesState extends State<CardPictures>
                                                 ),
                                                 Padding(
                                                   padding: const EdgeInsets.all(
-                                                      48.0),
+                                                      110.0),
                                                   child: position.toString() ==
                                                           "SwiperPosition.Left"
                                                       ? Align(
@@ -165,7 +172,7 @@ class _CardPicturesState extends State<CardPictures>
                                                               .topRight,
                                                           child:
                                                               Transform.rotate(
-                                                            angle: pi / 8,
+                                                            angle: pi / 12,
                                                             child: Container(
                                                               height: 40,
                                                               width: 120,
@@ -242,36 +249,44 @@ class _CardPicturesState extends State<CardPictures>
                                                       alignment:
                                                           Alignment.bottomLeft,
                                                       child: ListTile(
-                                                        onTap: () {
-                                                          ///_ads.myInterstitial()
-                                                          /// ..load()
-                                                          /// ..show();
-                                                          showDialog(
-                                                              barrierDismissible:
-                                                                  false,
-                                                              context: context,
-                                                              builder:
-                                                                  (context) {
-                                                                return Info(
-                                                                    index,
-                                                                    widget
-                                                                        .currentUser,
-                                                                    swipeKey);
-                                                              });
-                                                        },
-                                                        title: Text(
-                                                          "${index.name}, ${index.editInfo['showMyAge'] != null ? !index.editInfo['showMyAge'] ? index.age : "" : index.age}",
-                                                          style: TextStyle(
-                                                              fontFamily:
-                                                                  'Monteserrat',
+                                                          onTap: () {
+                                                            ///_ads.myInterstitial()
+                                                            /// ..load()
+                                                            /// ..show();
+                                                            showDialog(
+                                                                barrierDismissible:
+                                                                    false,
+                                                                context:
+                                                                    context,
+                                                                builder:
+                                                                    (context) {
+                                                                  return Info(
+                                                                      index,
+                                                                      widget
+                                                                          .currentUser,
+                                                                      swipeKey);
+                                                                });
+                                                          },
+                                                          title: Text(
+                                                            "${index.name}, ${index.editInfo['showMyAge'] != null ? !index.editInfo['showMyAge'] ? index.age : "" : index.age}",
+                                                            style: TextStyle(
+                                                                fontFamily:
+                                                                    'Monteserrat',
+                                                                color: Colors
+                                                                    .white,
+                                                                fontSize: 25,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold),
+                                                          ),
+                                                          subtitle: Text(
+                                                            "${index.distanceBW}km",
+                                                            style: TextStyle(
                                                               color:
                                                                   Colors.white,
-                                                              fontSize: 25,
-                                                              fontWeight:
-                                                                  FontWeight
-                                                                      .bold),
-                                                        ),
-                                                      )),
+                                                              fontSize: 20,
+                                                            ),
+                                                          ))),
                                                 ),
                                               ],
                                             ),
@@ -493,8 +508,8 @@ class _CardPicturesState extends State<CardPictures>
                     children: [
                       Image.asset(
                         "asset/logo-transp.png", // Substitua pelo caminho real para o seu arquivo de imagem do logo
-                        height: 80, // Ajuste a altura conforme necessário
-                        width: 50, // Ajuste a largura conforme necessário
+                        height: 40, // Ajuste a altura conforme necessário
+                        width: 40, // Ajuste a largura conforme necessário
                       ),
                       SizedBox(width: 7), // Espaço entre a imagem e o texto
                       ShaderMask(
