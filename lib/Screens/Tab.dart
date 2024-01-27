@@ -408,22 +408,43 @@ class TabbarState extends State<Tabbar> {
                       : 1,
                   child: Scaffold(
                     body: _telas[_indiceAtual],
-                    bottomNavigationBar: BottomNavigationBar(
-                      type: BottomNavigationBarType.fixed,
-                      unselectedItemColor: Colors.grey.shade800,
-                      iconSize: 30,
-                      currentIndex: _indiceAtual,
-                      onTap: onTabTapped,
-                      items: [
-                        BottomNavigationBarItem(
-                            icon: Icon(Icons.favorite), label: ""),
-                        BottomNavigationBarItem(
-                            icon: Icon(Icons.message_sharp), label: ""),
-                        BottomNavigationBarItem(
-                            icon: Icon(Icons.notifications), label: ""),
-                        BottomNavigationBarItem(
-                            icon: Icon(Icons.account_circle), label: ""),
-                      ],
+                    bottomNavigationBar: Container(
+                      height:
+                          80.0, // Ajuste a altura da barra de navegação conforme necessário
+                      child: BottomNavigationBar(
+                        type: BottomNavigationBarType.fixed,
+                        unselectedItemColor: Colors.grey.shade800,
+                        iconSize:
+                            40, // Ajuste o tamanho dos ícones conforme necessário
+                        currentIndex: _indiceAtual,
+                        onTap: onTabTapped,
+                        elevation:
+                            10.0, // Ajuste a elevação da barra de navegação conforme necessário
+                        items: [
+                          BottomNavigationBarItem(
+                            icon: Image.asset(
+                              "asset/logo_transparente.png",
+                              width:
+                                  45, // Ajuste a largura conforme necessário (menos de 48)
+                              height:
+                                  45, // Ajuste a altura conforme necessário (menos de 48)
+                            ),
+                            label: "",
+                          ),
+                          BottomNavigationBarItem(
+                            icon: Image.asset("asset/notifications.png"),
+                            label: "",
+                          ),
+                          BottomNavigationBarItem(
+                            icon: Image.asset("asset/mensagens.png"),
+                            label: "",
+                          ),
+                          BottomNavigationBarItem(
+                            icon: Image.asset("asset/person.png"),
+                            label: "",
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),

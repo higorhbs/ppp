@@ -246,47 +246,57 @@ class _CardPicturesState extends State<CardPictures>
                                                       const EdgeInsets.only(
                                                           bottom: 80),
                                                   child: Align(
-                                                      alignment:
-                                                          Alignment.bottomLeft,
-                                                      child: ListTile(
-                                                          onTap: () {
-                                                            ///_ads.myInterstitial()
-                                                            /// ..load()
-                                                            /// ..show();
-                                                            showDialog(
-                                                                barrierDismissible:
-                                                                    false,
-                                                                context:
-                                                                    context,
-                                                                builder:
-                                                                    (context) {
-                                                                  return Info(
-                                                                      index,
-                                                                      widget
-                                                                          .currentUser,
-                                                                      swipeKey);
-                                                                });
+                                                    alignment:
+                                                        Alignment.bottomLeft,
+                                                    child: ListTile(
+                                                      onTap: () {
+                                                        showDialog(
+                                                          barrierDismissible:
+                                                              false,
+                                                          context: context,
+                                                          builder: (context) {
+                                                            return Info(
+                                                                index,
+                                                                widget
+                                                                    .currentUser,
+                                                                swipeKey);
                                                           },
-                                                          title: Text(
-                                                            "${index.name}, ${index.editInfo['showMyAge'] != null ? !index.editInfo['showMyAge'] ? index.age : "" : index.age}",
-                                                            style: TextStyle(
-                                                                fontFamily:
-                                                                    'Monteserrat',
-                                                                color: Colors
-                                                                    .white,
-                                                                fontSize: 25,
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .bold),
+                                                        );
+                                                      },
+                                                      title: Text(
+                                                        "${index.name}, ${index.editInfo['showMyAge'] != null ? !index.editInfo['showMyAge'] ? index.age : "" : index.age}",
+                                                        style: TextStyle(
+                                                          fontFamily:
+                                                              'Monteserrat',
+                                                          color: Colors.white,
+                                                          fontSize: 25,
+                                                          fontWeight:
+                                                              FontWeight.bold,
+                                                        ),
+                                                      ),
+                                                      subtitle: Row(
+                                                        children: [
+                                                          Icon(
+                                                            Icons
+                                                                .location_on, // Use the location icon
+                                                            color: Colors.white,
+                                                            size: 18,
                                                           ),
-                                                          subtitle: Text(
-                                                            "${index.distanceBW}km",
+                                                          SizedBox(
+                                                              width:
+                                                                  5), // Add some spacing between the icon and text
+                                                          Text(
+                                                            "${index.distanceBW}km de distância",
                                                             style: TextStyle(
                                                               color:
                                                                   Colors.white,
-                                                              fontSize: 20,
+                                                              fontSize: 18,
                                                             ),
-                                                          ))),
+                                                          ),
+                                                        ],
+                                                      ),
+                                                    ),
+                                                  ),
                                                 ),
                                               ],
                                             ),
